@@ -27,6 +27,8 @@ while True:
         add_numbers = pyfiglet.figlet_format("Addition",font = "bulbhead" )
         print (add_numbers)
     #Get two numbers from the user
+    add_num_1 = float(input("Please enter first number: "))
+    add_num_2 = float(input("Please enter second number: "))
     #Perform the operation
     #Display the result
 #Add Error Handling
