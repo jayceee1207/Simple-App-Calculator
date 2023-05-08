@@ -30,6 +30,7 @@ while True:
     add_num_1 = float(input("Please enter first number: "))
     add_num_2 = float(input("Please enter second number: "))
     #Perform the operation
+    sum_numbers = add_num_1 + add_num_2
     #Display the result
 #Add Error Handling
     #If the user input a string instead of number
