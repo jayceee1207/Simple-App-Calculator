@@ -91,6 +91,8 @@ while True:
     #Add Error Handling
     except ValueError:
         print("Do not put letters. Input numbers. Try again!")
+    except ZeroDivisionError:
+        print("You cannot input 0 on the second number. Try again!")
 
 #Ask the user if they want to try again 
 #If they want to try again
