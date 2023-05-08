@@ -28,11 +28,11 @@ print(colored(program_name.renderText("O-O-P"), 'green').center(120))
 #PSEUDOCODE
 #Make a menu where user will choose their option of operation
 def menu():
-    print("Please choose an option from the menu.")
-    print("[1] Operation 1:","Addition")
-    print("[2] Operation 2:","Subtraction")
-    print("[3] Operation 3:","Multiplication")
-    print("[4] Operation 4:","Division")
+    print("\u001b[34;1m","Please choose an option from the menu.")
+    print("\u001b[32;1m","[1] Operation 1:","\u001b[32;1m","Addition")
+    print("\u001b[32;1m","[2] Operation 2:","\u001b[32;1m","Subtraction")
+    print("\u001b[32;1m","[3] Operation 3:","\u001b[32;1m","Multiplication")
+    print("\u001b[32;1m","[4] Operation 4:","\u001b[32;1m","Division")
 menu()
 #Ask the user to choose one of the four math operations
 option = int(input("\nEnter your option: ")) 
