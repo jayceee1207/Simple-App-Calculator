@@ -94,10 +94,14 @@ while True:
     except ZeroDivisionError:
         print("You cannot input 0 on the second number. Try again!")
 
-#Ask the user if they want to try again 
-#If they want to try again
-    #Repeat the program
-    #Continue the program
+    #Ask the user if they want to try again 
+    try_again = input("Do you want to use the program again? \n[Yes] if continue \n[No] if exit \nEnter option: ")
+    #If they want to try again
+    if try_again == "Yes":
+        #Repeat the program
+        menu()
+        option = int(input("\nEnter your option: "))
+        continue  
 #If they do not want to try again
     #Display Thank you message
     #Stop the program
