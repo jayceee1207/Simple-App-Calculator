@@ -102,6 +102,8 @@ while True:
         menu()
         option = int(input("\nEnter your option: "))
         continue  
-#If they do not want to try again
-    #Display Thank you message
-    #Stop the program
+    #If they do not want to try again
+    else:
+        #Display Thank you message
+        print("\nThank you for using my program! Have a good day!")
+        break
