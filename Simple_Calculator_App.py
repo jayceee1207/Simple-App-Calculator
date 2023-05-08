@@ -5,6 +5,13 @@
 
 #PSEUDOCODE
 #Make a menu where user will choose their option of operation
+def menu():
+    print("Please choose an option from the menu.")
+    print("[1] Operation 1:","Addition")
+    print("[2] Operation 2:","Subtraction")
+    print("[3] Operation 3:","Multiplication")
+    print("[4] Operation 4:","Division")
+menu()
 #Ask the user to choose one of the four math operations
 
 #While True to rerun the program if the user wish to
