@@ -62,11 +62,18 @@ while True:
     if option == 3:
         mult_numbers = pyfiglet.figlet_format("Multiplication",font = "bulbhead" )
         print (mult_numbers)
-    #Get two numbers from the user
-    #Perform the operation
-    #Display the result
-#Add Error Handling
-    #If the user input a string instead of number
+    try:
+        #Get two numbers from the user 
+        mult_num_1 = float(input("Please enter first number: "))
+        mult_num_2 = float(input("Please enter second number: "))
+        #Perform the operation
+        product_numbers = mult_num_1 * mult_num_2
+
+        #Display the result
+        print("The product of two numbers is: ",product_numbers, "\n") 
+        #Add Error Handling
+    except ValueError:
+        print("Do not put letters. Input numbers. Try again!")
 
 #if choice is Division
     #Get two numbers from the user
