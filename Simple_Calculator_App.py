@@ -32,6 +32,7 @@ while True:
     #Perform the operation
     sum_numbers = add_num_1 + add_num_2
     #Display the result
+    print("The sum of two numbers is: ",sum_numbers, "\n")
 #Add Error Handling
     #If the user input a string instead of number
 
