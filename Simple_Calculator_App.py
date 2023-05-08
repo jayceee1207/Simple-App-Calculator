@@ -27,13 +27,17 @@ while True:
         add_numbers = pyfiglet.figlet_format("Addition",font = "bulbhead" )
         print (add_numbers)
     #Get two numbers from the user
-    add_num_1 = float(input("Please enter first number: "))
-    add_num_2 = float(input("Please enter second number: "))
-    #Perform the operation
-    sum_numbers = add_num_1 + add_num_2
-    #Display the result
-    print("The sum of two numbers is: ",sum_numbers, "\n")
-#Add Error Handling
+    try:
+        add_num_1 = float(input("Please enter first number: "))
+        add_num_2 = float(input("Please enter second number: "))
+        #Perform the operation
+        sum_numbers = add_num_1 + add_num_2
+        #Display the result
+        print("The sum of two numbers is: ",sum_numbers, "\n")
+    #Add Error Handling
+    except ValueError:
+         print("Do not put letters. Input numbers. Try again!")
+        
     #If the user input a string instead of number
 
 #if choice is Subtraction
