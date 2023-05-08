@@ -42,7 +42,7 @@ try:
     #While True to rerun the program if the user wish to
     while True:
         #If option is out of choices, the program will ask their option again
-        while option > 4:
+        while option > 4 or 0 > option:
             print("Invalid option. Please try again!") 
             option = int(input("\nEnter your option: "))
         #if choice is Addition
@@ -107,7 +107,7 @@ try:
                 print("\u001b[31;1mDo not put letters. Input numbers. Try again!")
 
         #if choice is Division
-        elif option == 4:
+        else:
             division_numbers = pyfiglet.figlet_format("Division",font = "bulbhead" )
             print (division_numbers)
             try:
