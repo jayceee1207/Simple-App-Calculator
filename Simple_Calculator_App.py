@@ -16,7 +16,11 @@ menu()
 option = int(input("\nEnter your option: ")) 
 
 #While True to rerun the program if the user wish to
+while True:
 #If option is out of choices, the program will ask their option again
+    while option > 4:
+        print("Invalid option. Please try again!") 
+        option = int(input("\nEnter your option: "))
 #if choice is Addition
     #Get two numbers from the user
     #Perform the operation
