@@ -26,73 +26,77 @@ while True:
     if option == 1:
         add_numbers = pyfiglet.figlet_format("Addition",font = "bulbhead" )
         print (add_numbers)
-    #Get two numbers from the user
-    try:
-        add_num_1 = float(input("Please enter first number: "))
-        add_num_2 = float(input("Please enter second number: "))
-        #Perform the operation
-        sum_numbers = add_num_1 + add_num_2
-        #Display the result
-        print("The sum of two numbers is: ",sum_numbers, "\n")
-    #Add Error Handling
-    except ValueError:
-        #If the user input a string instead of number
-        print("Do not put letters. Input numbers. Try again!")
+        try:
+            #Get two numbers from the user
+            add_num_1 = float(input("Please enter first number: "))
+            add_num_2 = float(input("Please enter second number: "))
+            #Perform the operation
+            sum_numbers = add_num_1 + add_num_2
+            #Display the result
+            print("The sum of two numbers is: ",sum_numbers, "\n")
+        
+        #Add Error Handling
+        except ValueError:
+            #If the user input a string instead of number
+            print("Do not put letters. Input numbers. Try again!")
         
    
 
     #if choice is Subtraction
     if option == 2:
-            subtract_numbers = pyfiglet.figlet_format("Subtraction",font = "bulbhead" )
-            print (subtract_numbers)
-    try:
-        #Get two numbers from the user
-        sub_num_1 = float(input("Please enter first number: "))
-        sub_num_2 = float(input("Please enter second number: "))
-        #Perform the operation
-        difference_numbers = sub_num_1 - sub_num_2
-        #Display the result
-        print("The difference of two numbers is: ",difference_numbers, "\n")
-    #Add Error Handling
-    except ValueError:
-        #If the user input a string instead of number
-        print("Do not put letters. Input numbers. Try again!")
-    
+        subtract_numbers = pyfiglet.figlet_format("Subtraction",font = "bulbhead" )
+        print (subtract_numbers)
+        try:
+            #Get two numbers from the user
+            sub_num_1 = float(input("Please enter first number: "))
+           
+            sub_num_2 = float(input("Please enter second number: "))
+            #Perform the operation
+        
+            difference_numbers = sub_num_1 - sub_num_2
+
+            #Display the result
+            print("The difference of two numbers is: ",difference_numbers, "\n")
+        
+        #Add Error Handling
+        except ValueError:
+            print("Do not put letters. Input numbers. Try again!")
+            
     #if choice is Multiplication
     if option == 3:
         mult_numbers = pyfiglet.figlet_format("Multiplication",font = "bulbhead" )
         print (mult_numbers)
-    try:
-        #Get two numbers from the user 
-        mult_num_1 = float(input("Please enter first number: "))
-        mult_num_2 = float(input("Please enter second number: "))
-        #Perform the operation
-        product_numbers = mult_num_1 * mult_num_2
+        try:
+            #Get two numbers from the user 
+            mult_num_1 = float(input("Please enter first number: "))
+            mult_num_2 = float(input("Please enter second number: "))
+            #Perform the operation
+            product_numbers = mult_num_1 * mult_num_2
 
-        #Display the result
-        print("The product of two numbers is: ",product_numbers, "\n") 
-        #Add Error Handling
-    except ValueError:
-        print("Do not put letters. Input numbers. Try again!")
+            #Display the result
+            print("The product of two numbers is: ",product_numbers, "\n") 
+            #Add Error Handling
+        except ValueError:
+            print("Do not put letters. Input numbers. Try again!")
 
 #if choice is Division
     if option == 4:
         division_numbers = pyfiglet.figlet_format("Division",font = "bulbhead" )
         print (division_numbers)
-    try:
-        #Get two numbers from the user 
-        div_num_1 = float(input("Please enter first number: "))
-        div_num_2 = float(input("Please enter second number: "))
-        #Perform the operation
-        quotient_numbers = div_num_1/div_num_2
-        #Display the result
-        print("The quotient of two numbers is: ",quotient_numbers,"\n")
+        try:
+            #Get two numbers from the user 
+            div_num_1 = float(input("Please enter first number: "))
+            div_num_2 = float(input("Please enter second number: "))
+            #Perform the operation
+            quotient_numbers = div_num_1/div_num_2
+            #Display the result
+            print("The quotient of two numbers is: ",quotient_numbers,"\n")
         
-    #Add Error Handling
-    except ValueError:
-        print("Do not put letters. Input numbers. Try again!")
-    except ZeroDivisionError:
-        print("You cannot input 0 on the second number. Try again!")
+        #Add Error Handling
+        except ValueError:
+            print("Do not put letters. Input numbers. Try again!")
+        except ZeroDivisionError:
+            print("You cannot input 0 on the second number. Try again!")
 
     #Ask the user if they want to try again 
     try_again = input("Do you want to use the program again? \n[Yes] if continue \n[No] if exit \nEnter option: ")
