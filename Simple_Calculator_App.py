@@ -18,11 +18,11 @@ option = int(input("\nEnter your option: "))
 
 #While True to rerun the program if the user wish to
 while True:
-#If option is out of choices, the program will ask their option again
+    #If option is out of choices, the program will ask their option again
     while option > 4:
         print("Invalid option. Please try again!") 
         option = int(input("\nEnter your option: "))
-#if choice is Addition
+    #if choice is Addition
     if option == 1:
         add_numbers = pyfiglet.figlet_format("Addition",font = "bulbhead" )
         print (add_numbers)
@@ -41,7 +41,7 @@ while True:
         
    
 
-#if choice is Subtraction
+    #if choice is Subtraction
     if option == 2:
             subtract_numbers = pyfiglet.figlet_format("Subtraction",font = "bulbhead" )
             print (subtract_numbers)
@@ -53,14 +53,15 @@ while True:
         difference_numbers = sub_num_1 - sub_num_2
         #Display the result
         print("The difference of two numbers is: ",difference_numbers, "\n")
+    #Add Error Handling
     except ValueError:
         #If the user input a string instead of number
         print("Do not put letters. Input numbers. Try again!")
-         
-#Add Error Handling
-    #If the user input a string instead of number
-
-#if choice is Multiplication
+    
+    #if choice is Multiplication
+    if option == 3:
+        mult_numbers = pyfiglet.figlet_format("Multiplication",font = "bulbhead" )
+        print (mult_numbers)
     #Get two numbers from the user
     #Perform the operation
     #Display the result
