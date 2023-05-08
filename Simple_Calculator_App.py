@@ -3,6 +3,7 @@
 #Assignment 4: Program 1
 #May 6, 2023
 
+import pyfiglet 
 #PSEUDOCODE
 #Make a menu where user will choose their option of operation
 def menu():
@@ -22,6 +23,9 @@ while True:
         print("Invalid option. Please try again!") 
         option = int(input("\nEnter your option: "))
 #if choice is Addition
+    if option == 1:
+        add_numbers = pyfiglet.figlet_format("Addition",font = "bulbhead" )
+        print (add_numbers)
     #Get two numbers from the user
     #Perform the operation
     #Display the result
