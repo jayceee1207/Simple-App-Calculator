@@ -36,11 +36,15 @@ while True:
         print("The sum of two numbers is: ",sum_numbers, "\n")
     #Add Error Handling
     except ValueError:
-         print("Do not put letters. Input numbers. Try again!")
+        #If the user input a string instead of number
+        print("Do not put letters. Input numbers. Try again!")
         
-    #If the user input a string instead of number
+   
 
 #if choice is Subtraction
+    if option == 2:
+            subtract_numbers = pyfiglet.figlet_format("Subtraction",font = "bulbhead" )
+            print (subtract_numbers)
     #Get two numbers from the user
     #Perform the operation
     #Display the result
