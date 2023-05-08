@@ -76,6 +76,9 @@ while True:
         print("Do not put letters. Input numbers. Try again!")
 
 #if choice is Division
+    if option == 4:
+        division_numbers = pyfiglet.figlet_format("Division",font = "bulbhead" )
+        print (division_numbers)
     #Get two numbers from the user
     #Perform the operation
     #Display the result
