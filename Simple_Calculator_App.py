@@ -53,7 +53,9 @@ while True:
         difference_numbers = sub_num_1 - sub_num_2
         #Display the result
         print("The difference of two numbers is: ",difference_numbers, "\n")
-    except:
+    except ValueError:
+        #If the user input a string instead of number
+        print("Do not put letters. Input numbers. Try again!")
          
 #Add Error Handling
     #If the user input a string instead of number
