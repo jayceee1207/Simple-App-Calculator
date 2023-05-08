@@ -29,10 +29,10 @@ print(colored(program_name.renderText("O-O-P"), 'green').center(120))
 #Make a menu where user will choose their option of operation
 def menu():
     print("\u001b[34;1m","Please choose an option from the menu.")
-    print("\u001b[32;1m","[1] Operation 1:","\u001b[32;1m","Addition")
-    print("\u001b[32;1m","[2] Operation 2:","\u001b[32;1m","Subtraction")
-    print("\u001b[32;1m","[3] Operation 3:","\u001b[32;1m","Multiplication")
-    print("\u001b[32;1m","[4] Operation 4:","\u001b[32;1m","Division")
+    print("\u001b[32;1m","[1] Operation 1:","\u001b[37;1m","Addition")
+    print("\u001b[32;1m","[2] Operation 2:","\u001b[37;1m","Subtraction")
+    print("\u001b[32;1m","[3] Operation 3:","\u001b[37;1m","Multiplication")
+    print("\u001b[32;1m","[4] Operation 4:","\u001b[37;1m","Division")
 menu()
 #Ask the user to choose one of the four math operations
 option = int(input("\nEnter your option: ")) 
@@ -50,18 +50,19 @@ while True:
         try:
             #Get two numbers from the user
             add_num_1 = float(input("Please enter first number: "))
+            print(emoji.emojize(':plus:'))
             add_num_2 = float(input("Please enter second number: "))
             #Perform the operation
             sum_numbers = add_num_1 + add_num_2
             #Display the result
-            print("The sum of two numbers is: ",sum_numbers, "\n")
+            print(emoji.emojize(':heavy_equals_sign:'))
+            print("\u001b[34;1mThe sum of two numbers is: ",sum_numbers, "\n")
         
         #Add Error Handling
         except ValueError:
             #If the user input a string instead of number
-            print("Do not put letters. Input numbers. Try again!")
+            print("\u001b[31;1mDo not put letters. Input numbers. Try again!")
         
-   
 
     #if choice is Subtraction
     if option == 2:
@@ -70,18 +71,18 @@ while True:
         try:
             #Get two numbers from the user
             sub_num_1 = float(input("Please enter first number: "))
-           
+            print(emoji.emojize(':minus:'))
             sub_num_2 = float(input("Please enter second number: "))
             #Perform the operation
-        
+            print(emoji.emojize(':heavy_equals_sign:'))
             difference_numbers = sub_num_1 - sub_num_2
 
             #Display the result
-            print("The difference of two numbers is: ",difference_numbers, "\n")
+            print("\u001b[34;1mThe difference of two numbers is: ",difference_numbers, "\n")
         
         #Add Error Handling
         except ValueError:
-            print("Do not put letters. Input numbers. Try again!")
+            print("\u001b[31;1mDo not put letters. Input numbers. Try again!")
 
     #if choice is Multiplication
     if option == 3:
@@ -90,15 +91,17 @@ while True:
         try:
             #Get two numbers from the user 
             mult_num_1 = float(input("Please enter first number: "))
+            print(emoji.emojize(':multiply:'))
             mult_num_2 = float(input("Please enter second number: "))
             #Perform the operation
+            print(emoji.emojize(':heavy_equals_sign:'))
             product_numbers = mult_num_1 * mult_num_2
 
             #Display the result
-            print("The product of two numbers is: ",product_numbers, "\n") 
+            print("\u001b[34;1mThe product of two numbers is: ",product_numbers, "\n") 
             #Add Error Handling
         except ValueError:
-            print("Do not put letters. Input numbers. Try again!")
+            print("\u001b[31;1mDo not put letters. Input numbers. Try again!")
 
 #if choice is Division
     if option == 4:
@@ -107,20 +110,22 @@ while True:
         try:
             #Get two numbers from the user 
             div_num_1 = float(input("Please enter first number: "))
+            print(emoji.emojize(':divide:'))
             div_num_2 = float(input("Please enter second number: "))
             #Perform the operation
             quotient_numbers = div_num_1/div_num_2
             #Display the result
-            print("The quotient of two numbers is: ",quotient_numbers,"\n")
+            print(emoji.emojize(':heavy_equals_sign:'))
+            print("\u001b[34;1mThe quotient of two numbers is: ",quotient_numbers,"\n")
         
         #Add Error Handling
         except ValueError:
-            print("Do not put letters. Input numbers. Try again!")
+            print("\u001b[31;1mDo not put letters. Input numbers. Try again!")
         except ZeroDivisionError:
-            print("You cannot input 0 on the second number. Try again!")
+            print("\u001b[31;1mYou cannot input 0 on the second number. Try again!")
 
     #Ask the user if they want to try again 
-    try_again = input("Do you want to use the program again? \n[Yes] if continue \n[No] if exit \nEnter option: ")
+    try_again = input("\u001b[37;1mDo you want to use the program again? \n[Yes] if continue \n[No] if exit \nEnter option: ")
     #If they want to try again
     if try_again == "Yes":
         #Repeat the program
@@ -131,4 +136,5 @@ while True:
     else:
         #Display Thank you message
         print("\nThank you for using my program! Have a good day!")
+        print(emoji.emojize('Have a good day! :grinning_face:'))
         break
