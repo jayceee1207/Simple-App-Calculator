@@ -45,9 +45,16 @@ while True:
     if option == 2:
             subtract_numbers = pyfiglet.figlet_format("Subtraction",font = "bulbhead" )
             print (subtract_numbers)
-    #Get two numbers from the user
-    #Perform the operation
-    #Display the result
+    try:
+        #Get two numbers from the user
+        sub_num_1 = float(input("Please enter first number: "))
+        sub_num_2 = float(input("Please enter second number: "))
+        #Perform the operation
+        difference_numbers = sub_num_1 - sub_num_2
+        #Display the result
+        print("The difference of two numbers is: ",difference_numbers, "\n")
+    except:
+         
 #Add Error Handling
     #If the user input a string instead of number
 
