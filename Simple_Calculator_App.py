@@ -79,12 +79,18 @@ while True:
     if option == 4:
         division_numbers = pyfiglet.figlet_format("Division",font = "bulbhead" )
         print (division_numbers)
-    #Get two numbers from the user
-    #Perform the operation
-    #Display the result
-#Add Error Handling
-    #If the user input a string instead of number
-    #If the user input zero (0) in the second number
+    try:
+        #Get two numbers from the user 
+        div_num_1 = float(input("Please enter first number: "))
+        div_num_2 = float(input("Please enter second number: "))
+        #Perform the operation
+        quotient_numbers = div_num_1/div_num_2
+        #Display the result
+        print("The quotient of two numbers is: ",quotient_numbers,"\n")
+        
+    #Add Error Handling
+    except ValueError:
+        print("Do not put letters. Input numbers. Try again!")
 
 #Ask the user if they want to try again 
 #If they want to try again
