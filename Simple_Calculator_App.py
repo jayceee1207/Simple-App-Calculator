@@ -3,7 +3,28 @@
 #Assignment 4: Program 1
 #May 6, 2023
 
-import pyfiglet 
+import pyfiglet
+import emoji
+from pyfiglet import Figlet
+from termcolor import colored 
+
+design = ("*********************************************************")
+subject_name = ("Program: Simple App Calculator")
+program_name = Figlet(font='banner3-D')
+author_name = ("Programmed by: John Carlo R. Ablay")
+
+design_center = design.center(120)
+subject_name_center = subject_name.center(120)
+author_name_center = author_name.center(120)
+
+
+
+print("\u001b[35;1m", design_center)
+print("\u001b[33;1m", subject_name_center)
+print("\u001b[33;1m",author_name_center)
+print("\u001b[35;1m",design_center)
+print(colored(program_name.renderText("O-O-P"), 'green').center(120))
+
 #PSEUDOCODE
 #Make a menu where user will choose their option of operation
 def menu():
@@ -61,7 +82,7 @@ while True:
         #Add Error Handling
         except ValueError:
             print("Do not put letters. Input numbers. Try again!")
-            
+
     #if choice is Multiplication
     if option == 3:
         mult_numbers = pyfiglet.figlet_format("Multiplication",font = "bulbhead" )
