@@ -13,6 +13,7 @@ def menu():
     print("[4] Operation 4:","Division")
 menu()
 #Ask the user to choose one of the four math operations
+option = int(input("\nEnter your option: ")) 
 
 #While True to rerun the program if the user wish to
 #If option is out of choices, the program will ask their option again
